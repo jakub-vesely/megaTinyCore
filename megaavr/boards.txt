@@ -70,7 +70,7 @@ menu.WDTwindow=WDT window (if desired. burn bootloader req'd. Cannot be disabled
 #menu.optimization=Optimization level (see documentation)
 menu.PWMmux=PWM pins (advanced, see core documentation)
 menu.attach=attachInterrupt Mode
-
+menu.HugoPcbVersion=Hugo PCB Version
 ##########################################################################
 #                                                                        #
 ###              ####    ###    ###   ####   ####    ###               ###
@@ -1186,7 +1186,7 @@ atxy4.build.wire=MORS
 atxy4.build.attachmode=-DCORE_ATTACH_ALL
 atxy4.build.mcu=attiny{build.attiny}
 atxy4.build.f_cpu={build.speed}000000L
-atxy4.build.extra_flags=-DARDUINO_attinyxy4 {build.tuned}
+atxy4.build.extra_flags=-DARDUINO_attinyxy4 {build.tuned} {build.hugo_pcb_version}
 atxy4.build.export_merged_output=false
 atxy4.build.pwmflags=
 
@@ -1648,6 +1648,26 @@ atxy4.menu.WDTwindow.250msec.bootloader.wdtwindowbits=0110
 atxy4.menu.WDTwindow.125msec.bootloader.wdtwindowbits=0101
 atxy4.menu.WDTwindow.63msec.bootloader.wdtwindowbits=0100
 
+#----------------------------------------#
+# HUGO PCB VERSION                       #
+#________________________________________#
+atxy4.menu.HugoPcbVersion.v1=1
+atxy4.menu.HugoPcbVersion.v1.build.hugo_pcb_version=-DHUGO_PCB_VERSION=1
+atxy4.menu.HugoPcbVersion.v2=2
+atxy4.menu.HugoPcbVersion.v2.build.hugo_pcb_version=-DHUGO_PCB_VERSION=2
+atxy4.menu.HugoPcbVersion.v3=3
+atxy4.menu.HugoPcbVersion.v3.build.hugo_pcb_version=-DHUGO_PCB_VERSION=3
+atxy4.menu.HugoPcbVersion.v4=4
+atxy4.menu.HugoPcbVersion.v4.build.hugo_pcb_version=-DHUGO_PCB_VERSION=4
+atxy4.menu.HugoPcbVersion.v5=5
+atxy4.menu.HugoPcbVersion.v5.build.hugo_pcb_version=-DHUGO_PCB_VERSION=5
+atxy4.menu.HugoPcbVersion.v6=6
+atxy4.menu.HugoPcbVersion.v6.build.hugo_pcb_version=-DHUGO_PCB_VERSION=6
+atxy4.menu.HugoPcbVersion.v7=7
+atxy4.menu.HugoPcbVersion.v7.build.hugo_pcb_version=-DHUGO_PCB_VERSION=7
+atxy4.menu.HugoPcbVersion.v8=8
+atxy4.menu.HugoPcbVersion.v8.build.hugo_pcb_version=-DHUGO_PCB_VERSION=8
+
 ############################################################################
 #  Non-bootloader                                                          #
 #                                     ###      ####   ###  #   #         ###
@@ -1668,7 +1688,7 @@ atxy2.build.mrelax=
 atxy2.build.variant=txy2
 atxy2.build.mcu=attiny{build.attiny}
 atxy2.build.f_cpu={build.speed}000000L
-atxy2.build.extra_flags=-DARDUINO_attinyxy2 {build.tuned}
+atxy2.build.extra_flags=-DARDUINO_attinyxy2 {build.tuned} {build.hugo_pcb_version}
 atxy2.build.export_merged_output=false
 #atxy2.build.optimizationlevel=-Os
 atxy2.build.gcse=
@@ -2071,6 +2091,26 @@ atxy2.menu.WDTwindow.500msec.bootloader.wdtwindowbits=0111
 atxy2.menu.WDTwindow.250msec.bootloader.wdtwindowbits=0110
 atxy2.menu.WDTwindow.125msec.bootloader.wdtwindowbits=0101
 atxy2.menu.WDTwindow.63msec.bootloader.wdtwindowbits=0100
+
+#----------------------------------------#
+# HUGO PCB VERSION                       #
+#________________________________________#
+atxy2.menu.HugoPcbVersion.v1=1
+atxy2.menu.HugoPcbVersion.v1.build.hugo_pcb_version=-DHUGO_PCB_VERSION=1
+atxy2.menu.HugoPcbVersion.v2=2
+atxy2.menu.HugoPcbVersion.v2.build.hugo_pcb_version=-DHUGO_PCB_VERSION=2
+atxy2.menu.HugoPcbVersion.v3=3
+atxy2.menu.HugoPcbVersion.v3.build.hugo_pcb_version=-DHUGO_PCB_VERSION=3
+atxy2.menu.HugoPcbVersion.v4=4
+atxy2.menu.HugoPcbVersion.v4.build.hugo_pcb_version=-DHUGO_PCB_VERSION=4
+atxy2.menu.HugoPcbVersion.v5=5
+atxy2.menu.HugoPcbVersion.v5.build.hugo_pcb_version=-DHUGO_PCB_VERSION=5
+atxy2.menu.HugoPcbVersion.v6=6
+atxy2.menu.HugoPcbVersion.v6.build.hugo_pcb_version=-DHUGO_PCB_VERSION=6
+atxy2.menu.HugoPcbVersion.v7=7
+atxy2.menu.HugoPcbVersion.v7.build.hugo_pcb_version=-DHUGO_PCB_VERSION=7
+atxy2.menu.HugoPcbVersion.v8=8
+atxy2.menu.HugoPcbVersion.v8.build.hugo_pcb_version=-DHUGO_PCB_VERSION=8
 
 ############################################################################
 #  Non-bootloader                                                          #
